@@ -1,0 +1,14 @@
+.list li{
+    list-style-type: none;
+    font-family: monospace;
+    position:relative;
+    margin-bottom: 20px;
+ 
+}
+.delete{
+   color:red;
+  position: absolute;
+  right: 10px;
+  top:20%;
+
+}

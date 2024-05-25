@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="min-h-screen bg-yellow-500 flex items-center justify-center w-full"
+  >
+    <form
+      class="form flex flex-col border-[1px] border-yellow-200 rounded-lg lg:w-[40%] w-[80%] md:w-[60%]"
+    >
+      <input
+        class="input p-2 outline-none rounded-lg text-xl"
+        type="text"
+        placeholder="Enter your task"
+      />
+      <div class="border-t-2 border-yellow-600 my-4">
+        <h1 class="text-center text-2xl my-2 capitalize">You task List</h1>
+        <ul class="list p-2 text-xl">
+          <!-- <li class="my-6 flex justify-between border-b-[1px]">
+          First task  <i class="delete fa-solid fa-trash"></i>
+         
+        </li> -->
+        </ul>
+      </div>
+    </form>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
