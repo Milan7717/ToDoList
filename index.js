@@ -2,8 +2,7 @@ const formEl = document.querySelector(".form");
 const inputEl = document.querySelector(".input");
 const ulEl = document.querySelector(".list");
 
-
-let list = JSON.parse(localStorage.getItem("list") || []);
+let list = JSON.parse(localStorage.getItem("list")) || [];
 list.forEach((task) => {
   toDolist(task);
 });
@@ -27,10 +26,9 @@ function toDolist(task) {
   ulEl.appendChild(liEl);
   inputEl.value = "";
 
-
   const deleteEl = document.createElement("div");
   deleteEl.innerHTML = `<i class="delete fa-solid fa-trash"></i>`;
-  liEl.appendChild(deleteEl)
+  liEl.appendChild(deleteEl);
 
   deleteEl.addEventListener("click", () => {
     liEl.remove();
